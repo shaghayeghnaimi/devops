@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
+--
+-- Host: localhost    Database: packages
+-- ------------------------------------------------------
+-- Server version	8.0.23
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `adresses`
+--
+
+DROP TABLE IF EXISTS `adresses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `adresses` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `city` varchar(50) NOT NULL,
+  `street` varchar(50) NOT NULL,
+  `allay` varchar(50) NOT NULL,
+  `code` varchar(50) NOT NULL,
+  `phone_number` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `adresses`
+--
+
+LOCK TABLES `adresses` WRITE;
+/*!40000 ALTER TABLE `adresses` DISABLE KEYS */;
+INSERT INTO `adresses` VALUES (1,'Yazd','Kashani','6','99999999999','9133938097'),(2,'Shiraz','Golha','75','99705285499999','9133955097'),(3,'Kerman','Shafa','15','99705285245359','9333955097'),(4,'Tehran','Motahari','5','9970528145115359','9333952247'),(5,'Yasuj','Farabi','20','99705120345359','9333005097'),(6,'Esfahan','Hezar','2','997051146985559','9315305097'),(7,'Gilan','Isar','51','9970511422285559','9315311097'),(8,'Tabriz','Abazar','1','9970511422285559','9315311097'),(9,'Tehran','Babaii','25','123456789456','9123652154'),(10,'Tehran','Babaii','25','123456789456','9123652154'),(11,'Tehran','Babaii','25','123456789456','9123652154'),(12,'Tehran','Babaii','25','123456789456','9123652154'),(13,'Tehran','Babaii','25','123456789456','9123652154'),(14,'Tehran','Babaii','25','123456789456','9123652154'),(15,'Shiraz','Golha','10','123456789456','9223652154'),(16,'Shiraz','Golha','10','123456789456','9223652154'),(17,'Shiraz','Golha','10','123456789456','9223652154'),(18,'Tehran','Kamali','12','123456789456','9123652154'),(20,'Tehran','Kamali','12','123456789456','9123652154'),(21,'Tehran','Kamali','12','123456789456','9123652154'),(23,'Tehran','Kamali','6','123458889456','9133652154'),(24,'Tehran','Kamali','6','123458889456','9133652154');
+/*!40000 ALTER TABLE `adresses` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-06-18 21:25:13
